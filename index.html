@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Estefani</title>
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    
+    <div class="box">
+        <form>
+            <h2>&lt;/Calculadora></h2>
+            <div class="inputBox">
+                <input type="text" required id="n1">
+                <span>Primer digito</span>
+                <i></i>
+            </div>
+            <div class="inputBox1">
+                <input type="text" required id="n2">
+                <span>Segundo digito</span>
+                <i></i>
+            </div>
+
+            <div class="select">
+                <select name="format" id="operators">
+                    <option selected disabled>Selecciona una operación</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+
+           
+            <input type="submit" onclick="calcularResultado(event);" value="Calcular">
+
+            <input type="text" id="result" placeholder="Resultado...">
+        </form>
+    </div>
+
+</body>
+</html>
